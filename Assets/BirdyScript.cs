@@ -4,13 +4,13 @@ public class BirdyScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public float flapStrength;
-    public logicManagerScript logic;
+    public LogicManagerScript logic;
     public bool birdIsAlive = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<logicManagerScript>();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicManagerScript>();
     }
 
     // Update is called once per frame
