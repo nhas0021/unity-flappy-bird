@@ -20,6 +20,11 @@ public class BirdyScript : MonoBehaviour
         {
             myRigidbody.linearVelocity = Vector2.up * flapStrength;
         }
+
+        if (transform.position.y > 20.8 || transform.position.y < -20.8)
+        {
+            logic.gameOver();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
